@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>View Users Posts</title>
+</head>
+<body>
+	<h1>View Users Posts</h1>
+
+	<form action="ViewUserPosts.php" method="post">
+		<select name = "options">
+
+		<!--I really didn't like putting php inline, 
+		so I made it a seperate file and included it.
+		It simply builds the select options when the page loads-->
+		<?php require 'buildOptions.php';?>
+
+		</select>
+
+		<input type="submit" value = "Submit">
+	</form>
+</body>
+</html> 

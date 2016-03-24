@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Delete Posts</title>
+</head>
+<body>
+	<h1>Delete Posts</h1>
+
+	<form action="DeletePost.php" method="post">
+		
+		<table>
+			<tr>
+				<td>Delete?</td>
+				<td>Author</td>
+				<td>Content</td>
+			</tr>
+
+			<!--I really didn't like putting php inline, 
+			so I made it a seperate file and included it.
+			It creates the checkbox options for the form-->
+			<?php require 'buildCheckboxes.php';?>
+
+		</table>
+
+		<input type="submit" value = "Submit">
+	</form>
+</body>
+</html> 
